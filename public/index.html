@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard - Guarda Municipal</title>
+</head>
+
+
+<style>
+body{
+    background-color: #1a1f26;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1a1f26;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #27ecfc;
+}
+</style>
+
+
+<body>
+    <ul>
+        <li><a class="active" href="/">Inicio</a></li>
+        <li><a href="/historico-guarda/json">API (JSON)</a></li>
+    </ul>   
+    <br>
+    <div id="graficoPizza" align="center"><img src="https://media3.giphy.com/media/11FuEnXyGsXFba/source.gif" alt="Carregando"></div>
+
+    <div id="graficoLinha" align="center"></div>
+
+    <div id="graficoColuna" align="center"></div>
+
+    
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+<script src="/js/HttpService.js"></script>
+<script src="/js/Main.js"></script>
+<script src="/js/Graficos.js"></script>
+<script src="/js/GuardaMunicipalFacade.js"></script>
+
+
+</html>
