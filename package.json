@@ -10,7 +10,7 @@
   "author": "Henrique",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "firebase": "^5.3.0",
     "marko": "^4.17.5"
   },
